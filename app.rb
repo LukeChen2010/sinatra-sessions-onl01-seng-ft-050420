@@ -58,7 +58,6 @@ class App < Sinatra::Base
     #clear session hash here
     session = {}
     "Session has now been cleared. session content: #{session.inspect}. Continue on to the '/finish' line!"
-    redirect '/finish'
   end
 
   get '/finish' do
